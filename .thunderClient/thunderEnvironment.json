@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Lab 5 Local",
+    "default": true,
+    "variables": [
+      {
+        "name": "baseUrl",
+        "value": "http://localhost:5000"
+      },
+      {
+        "name": "studentId",
+        "value": ""
+      }
+    ]
+  }
+]

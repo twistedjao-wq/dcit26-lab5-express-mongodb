@@ -1,0 +1,103 @@
+[
+  {
+    "client": "Thunder Client",
+    "collectionName": "DCIT 26 Lab 5 - Student API",
+    "dateExported": "2026-10-28T22:21:52.000Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+      {
+        "_id": "health-request",
+        "colId": "student-api-collection",
+        "containerId": "",
+        "name": "Health Check",
+        "url": "{{baseUrl}}/api/health",
+        "method": "GET",
+        "sortNum": 10000,
+        "headers": [],
+        "params": [],
+        "tests": []
+      },
+      {
+        "_id": "create-student-request",
+        "colId": "student-api-collection",
+        "containerId": "",
+        "name": "Create Student",
+        "url": "{{baseUrl}}/api/students",
+        "method": "POST",
+        "sortNum": 20000,
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "params": [],
+        "body": {
+          "type": "json",
+          "raw": "{\n  \"fullName\": \"Alex Santos\",\n  \"course\": \"BSIT\",\n  \"yearLevel\": 2,\n  \"section\": \"IT-2A\"\n}",
+          "form": []
+        },
+        "tests": []
+      },
+      {
+        "_id": "get-all-students-request",
+        "colId": "student-api-collection",
+        "containerId": "",
+        "name": "Get All Students",
+        "url": "{{baseUrl}}/api/students",
+        "method": "GET",
+        "sortNum": 30000,
+        "headers": [],
+        "params": [],
+        "tests": []
+      },
+      {
+        "_id": "get-student-request",
+        "colId": "student-api-collection",
+        "containerId": "",
+        "name": "Get Student by ID",
+        "url": "{{baseUrl}}/api/students/{{studentId}}",
+        "method": "GET",
+        "sortNum": 40000,
+        "headers": [],
+        "params": [],
+        "tests": []
+      },
+      {
+        "_id": "update-student-request",
+        "colId": "student-api-collection",
+        "containerId": "",
+        "name": "Update Student",
+        "url": "{{baseUrl}}/api/students/{{studentId}}",
+        "method": "PUT",
+        "sortNum": 50000,
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "params": [],
+        "body": {
+          "type": "json",
+          "raw": "{\n  \"section\": \"IT-2B\"\n}",
+          "form": []
+        },
+        "tests": []
+      },
+      {
+        "_id": "delete-student-request",
+        "colId": "student-api-collection",
+        "containerId": "",
+        "name": "Delete Student",
+        "url": "{{baseUrl}}/api/students/{{studentId}}",
+        "method": "DELETE",
+        "sortNum": 60000,
+        "headers": [],
+        "params": [],
+        "tests": []
+      }
+    ]
+  }
+]
